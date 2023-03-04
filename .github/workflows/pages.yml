@@ -52,14 +52,13 @@ jobs:
         # Gitee 仓库
         GITEE_REPO: gitee.com/papwuj/papwuj.gitee.io.git
       # 将编译后的博客文件推送到指定仓库
-      # git remote add origin "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO"
+      # 
       run: |
-        cd ./public && git init && git add .
         git config user.name "WuJing"
         git config user.email "wujing0510@live.com"
         git config --global init.defaultBranch main
+        cd ./public && git init && git add .
         git branch -m gh-pages
         git add .
         git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
-        git remote set-url git@github.com:wujing0510@live.com/${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO.git
-        git push --set-upstream gh-pages
+        git push --force --quiet "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO"
