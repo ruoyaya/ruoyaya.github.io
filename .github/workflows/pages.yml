@@ -57,6 +57,7 @@ jobs:
         git config --global user.name "WuJing"
         git config --global user.email "wujing0510@live.com"
         git config --global init.defaultBranch main
+        git config --global --add push.autoSetupRemote true
         cd ./public && git init && git add .
         git branch -m gh-pages
         git add .
