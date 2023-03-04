@@ -1,39 +1,61 @@
-# .github/workflows/pages.yml
-name: Pages
+name: WIKI CI/CD
 
+# 触发条件：在 push 到 hexo-blog-backup 分支后触发
 on:
   push:
-    branches:
-      - main  # default branch
+    branches: 
+      - main
+
+env:
+  TZ: Asia/Shanghai
 
 jobs:
-  pages:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
+  blog-cicd:
+    name: Hexo blog build & deploy
+    runs-on: ubuntu-latest # 使用最新的 Ubuntu 系统作为编译部署的环境
+
     steps:
-      - uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # If your repository depends on submodule, please see: https://github.com/actions/checkout
-          submodules: recursive
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-      - name: Cache NPM dependencies
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: ${{ runner.OS }}-npm-cache
-          restore-keys: |
-            ${{ runner.OS }}-npm-cache
-      - name: Install Dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+    - name: Checkout codes
+      uses: actions/checkout@v2
+
+    - name: Setup node
+      # 设置 node.js 环境
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
+    - name: Cache node modules
+      # 设置包缓存目录，避免每次下载
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
+    - name: Install hexo dependencies
+      # 下载 hexo-cli 脚手架及相关安装包
+      run: |
+        npm install -g hexo-cli
+        npm install
+
+    - name: Generate files
+      # 编译 markdown 文件
+      run: |
+        hexo clean
+        hexo generate
+
+    - name: Deploy hexo blog
+      env: 
+        # Github 仓库
+        GITHUB_REPO: github.com/papwuj/papwuj.github.io
+        # Coding 仓库
+        CODING_REPO: e.coding.net/papwuj/blogs.git
+        # Gitee 仓库
+        GITEE_REPO: gitee.com/papwuj/papwuj.gitee.io.git
+      # 将编译后的博客文件推送到指定仓库
+      run: |
+        cd ./public && git init && git add .
+        git config user.name "WuJing"
+        git config user.email "wujing0510@live.com"
+        git add .
+        git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
+        git push --force --quiet "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" gh-pages:gh-pages
