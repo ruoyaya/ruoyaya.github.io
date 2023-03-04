@@ -62,4 +62,4 @@ jobs:
         git branch -m gh-pages
         git add .
         git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
-        git push --force --quiet "https://wujing0510%40live.com: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@$GITHUB_REPO"
+        git push --force --quiet "https://wujing0510%40live.com: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@github.com/papwuj/papwuj.github.io.git"
