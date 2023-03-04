@@ -54,8 +54,8 @@ jobs:
       # 将编译后的博客文件推送到指定仓库
       # 
       run: |
-        git config user.name "WuJing"
-        git config user.email "wujing0510@live.com"
+        git config --global user.name "WuJing"
+        git config --global user.email "wujing0510@live.com"
         git config --global init.defaultBranch main
         cd ./public && git init && git add .
         git branch -m gh-pages
