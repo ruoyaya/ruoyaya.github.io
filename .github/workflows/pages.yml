@@ -73,4 +73,4 @@ jobs:
         git branch -m gh-pages
         git add .
         git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
-        git push --force --quiet "https://${user_name}:${{ secrets.GITHUB_TOKEN }}@github.com/papwuj/papwuj.github.io.git"
+        git push --force --quiet "https://papwuj:${{ secrets.GITHUB_TOKEN }}@github.com/papwuj/papwuj.github.io.git"
