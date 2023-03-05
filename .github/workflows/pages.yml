@@ -52,13 +52,6 @@ jobs:
         # Gitee 仓库
         GITEE_REPO: gitee.com/papwuj/papwuj.gitee.io.git
       # 将编译后的博客文件推送到指定仓库
-      # 
-      run: |
-        git config --global user.name "WuJing"
-        git config --global user.email "wujing0510@live.com"
-        git config --global init.defaultBranch main
-        git config --global --add push.autoSetupRemote true
-      
       # mkdir ~/.ssh/
       
       # echo "-----BEGIN OPENSSH PRIVATE KEY-----" >> ~/.ssh/id_deploy
@@ -71,9 +64,13 @@ jobs:
       # echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP5WYWxQDHNehB5R0timHf2kKZVOmFE4fi/PmkUemk+1 wujing0510@live.com" >> ~/.ssh/id_deploy.pub
       # echo "github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl" >> ~/.ssh/known_hosts
 
+      run: |
+        git config --global user.name "WuJing"
+        git config --global user.email "wujing0510@live.com"
+        git config --global init.defaultBranch main
+        git config --global --add push.autoSetupRemote true
         cd ./public && git init && git add .
         git branch -m gh-pages
         git add .
         git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
         git push --force --quiet "https://${user_name}:${{ secrets.GITHUB_TOKEN }}@github.com/papwuj/papwuj.github.io.git"
-        
