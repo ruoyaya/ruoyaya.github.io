@@ -15,9 +15,9 @@ topMenu:
     icon: link
     submenu:
       - label: 作者博客
-        url: https://papwuj.github.io/
+        url: /2023/03/05/profile
       - label: 项目链接
-        url: https://github.com/papwuj/papwuj.git
+        url: https://github.com/papwuj/papwuj.github.io
 
 group_link: https://matrix.to/#/#CandyUnion:nya.one
 footerLinks:
