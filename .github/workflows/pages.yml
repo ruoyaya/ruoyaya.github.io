@@ -65,4 +65,4 @@ jobs:
         git add .
         git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
         git push --force --quiet "https://papwuj:${{ secrets.GITHUB_TOKEN }}@$GITHUB_REPO"
-        git push --force --quiet "https://papwuj:${{ secrets.GITEE_TOKEN }}@GITEE_REPO" origin master
+        git push --force --quiet "https://papwuj:${{ secrets.GITEE_TOKEN }}@$GITEE_REPO" origin master
