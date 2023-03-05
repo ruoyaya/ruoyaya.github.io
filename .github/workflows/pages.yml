@@ -50,7 +50,7 @@ jobs:
         # Coding 仓库
         CODING_REPO: e.coding.net/papwuj/blogs.git
         # Gitee 仓库
-        GITEE_REPO: gitee.com/papwuj/papwuj.gitee.io.git
+        GITEE_REPO: gitee.com/papwuj/papwuj.git
 
       run: |
         git config --global user.name "WuJing"
