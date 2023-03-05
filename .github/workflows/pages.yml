@@ -59,6 +59,7 @@ jobs:
         git config --global init.defaultBranch main
         git config --global --add push.autoSetupRemote true
         mkdir ~/.ssh/
+        
         echo "-----BEGIN OPENSSH PRIVATE KEY-----" >> ~/.ssh/id_deploy
         echo "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW" >> ~/.ssh/id_deploy
         echo "QyNTUxOQAAACD+VmFsUAxzXoQeUdLYph39pCmVTphROH4vz5pFHppPtQAAAJjA/rLmwP6y" >> ~/.ssh/id_deploy
@@ -66,6 +67,9 @@ jobs:
         echo "AAAECuayTko/B3pUrawI1fnSYjCF7qCTteksNvs9SRfp75Ov5WYWxQDHNehB5R0timHf2k" >> ~/.ssh/id_deploy
         echo "KZVOmFE4fi/PmkUemk+1AAAAE3d1amluZzA1MTBAbGl2ZS5jb20BAg==" >> ~/.ssh/id_deploy
         echo "-----END OPENSSH PRIVATE KEY-----" >> ~/.ssh/id_deploy
+        echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP5WYWxQDHNehB5R0timHf2kKZVOmFE4fi/PmkUemk+1 wujing0510@live.com" >> ~/.ssh/id_deploy.pub
+        echo "github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl" >> ~/.ssh/known_hosts
+
         cd ./public && git init && git add .
         git branch -m gh-pages
         git add .
