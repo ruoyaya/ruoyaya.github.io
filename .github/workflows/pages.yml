@@ -58,6 +58,14 @@ jobs:
         git config --global user.email "wujing0510@live.com"
         git config --global init.defaultBranch main
         git config --global --add push.autoSetupRemote true
+        mkdir ~/.ssh/
+        echo "-----BEGIN OPENSSH PRIVATE KEY-----" >> ~/.ssh/id_deploy
+        echo "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW" >> ~/.ssh/id_deploy
+        echo "QyNTUxOQAAACD+VmFsUAxzXoQeUdLYph39pCmVTphROH4vz5pFHppPtQAAAJjA/rLmwP6y" >> ~/.ssh/id_deploy
+        echo "5gAAAAtzc2gtZWQyNTUxOQAAACD+VmFsUAxzXoQeUdLYph39pCmVTphROH4vz5pFHppPtQ" >> ~/.ssh/id_deploy
+        echo "AAAECuayTko/B3pUrawI1fnSYjCF7qCTteksNvs9SRfp75Ov5WYWxQDHNehB5R0timHf2k" >> ~/.ssh/id_deploy
+        echo "KZVOmFE4fi/PmkUemk+1AAAAE3d1amluZzA1MTBAbGl2ZS5jb20BAg==" >> ~/.ssh/id_deploy
+        echo "-----END OPENSSH PRIVATE KEY-----" >> ~/.ssh/id_deploy
         cd ./public && git init && git add .
         git branch -m gh-pages
         git add .
