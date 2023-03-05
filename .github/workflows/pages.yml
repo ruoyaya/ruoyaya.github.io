@@ -70,6 +70,7 @@ jobs:
         git config --global init.defaultBranch main
         git config --global --add push.autoSetupRemote true
         cd ./public && git init && git add .
+        echo "${{ secrets.GITHUB_TOKEN }}"
         git branch -m gh-pages
         git add .
         git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
