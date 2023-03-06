@@ -68,14 +68,6 @@ friends:
     bio: "喵~"
     avatar: "../images/avatar.webp"
     link: "https://github.com/papwuj"
-  - name: "猫猫②号"
-    bio: "喵喵~"
-    avatar: "../images/avatar.webp"
-    link: "https://github.com/papwuj"
-  - name: "猫猫⑨号"
-    bio: "咪啪~"
-    avatar: "../images/avatar.webp"
-    link: "https://github.com/papwuj"
 
 posts:
   comments: 
@@ -89,3 +81,9 @@ gitalk:
   # admin: 
   #   - 'Candinya'
   # distractionFreeMode: false
+
+jsconfig:
+  main:
+    cover:
+      baseUrl: "https://papwuj.github.io/"
+    createTime: "2018/05/06 17:03:12"
