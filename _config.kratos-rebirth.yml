@@ -74,15 +74,13 @@ posts:
     provider: gitalk
 
 gitalk:
-  clientID: 'a45e339b431c2f15'
-  clientSecret: '40cc7d9137149d47bb63af6c99a4ad31a8a10688'
-  # clientID: '032201d847bdf8d2b9b9'
-  # clientSecret: 'a85ee400a3970c7be1aee8733f7b5f03bb6de971'
-  # repo: 'Kratos-Rebirth-Demo'
-  # owner: 'papwuj'
-  # admin: 
-  #   - 'papwuj'
-  # distractionFreeMode: false
+  clientID: '032201d847bdf8d2b9b9'
+  clientSecret: '2543fa2d5936804df167d6e9866e9a47c8b360fe'
+  repo: 'papwuj.github.io'
+  owner: 'papwuj'
+  admin: 
+    - 'papwuj'
+  distractionFreeMode: false
 
 jsconfig:
   main:
