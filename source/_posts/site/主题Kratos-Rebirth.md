@@ -3,8 +3,7 @@ title: 主题 Kratos-Rebirth
 date: 2023-03-02 01:01:01
 categories:
 - 建站
-- hexo
-- Kratos-Rebirth
+- [hexo,Kratos-Rebirth]
 ---
 
 ![Kratos-Rebirth](https://repository-images.githubusercontent.com/132322562/46429300-7da7-11ea-8c82-d03503cb17b8)
