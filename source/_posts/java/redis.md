@@ -1,12 +1,12 @@
 ---
-title: SPEL表达式解析
+title: Redis
 date: 2023-03-07 00:23:01
 categories:
 - 代码收藏
 - Java
 ---
 
-## SPEL表达式解析
+## Redis清理数据
 
 ```java
 package test;
