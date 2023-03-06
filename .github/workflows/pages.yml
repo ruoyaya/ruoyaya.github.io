@@ -48,9 +48,14 @@ jobs:
         # Github 仓库
         GITHUB_REPO: github.com/papwuj/papwuj.github.io.git
         # Coding 仓库
-        CODING_REPO: e.coding.net/papwuj/blogs.git
+        # CODING_REPO: e.coding.net/papwuj/blogs.git
         # Gitee 仓库
-        GITEE_REPO: gitee.com/papwuj/papwuj.git
+        # GITEE_REPO: gitee.com/papwuj/papwuj.git
+        #   rm -rf .git && git init && git add .
+        #   git branch -m master
+        #   git add .
+        #   git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
+        #   git push --force --quiet "https://papwuj:7d0c55c3bbea4241d4a228ef32736443@gitee.com/papwuj/papwuj.git"
 
       run: |
         git config --global user.name "WuJing"
@@ -62,8 +67,4 @@ jobs:
         git add .
         git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
         git push --force --quiet "https://papwuj:${{ secrets.GITHUB_TOKEN }}@$GITHUB_REPO"
-        rm -rf .git && git init && git add .
-        git branch -m master
-        git add .
-        git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
-        git push --force --quiet "https://papwuj:7d0c55c3bbea4241d4a228ef32736443@gitee.com/papwuj/papwuj.git"
+        
