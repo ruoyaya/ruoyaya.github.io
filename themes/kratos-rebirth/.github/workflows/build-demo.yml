@@ -16,7 +16,7 @@ jobs:
     
     # Environment virables
     env:
-      SITE_URL: kr-demo.candinya.com
+      SITE_URL: papwuj.github.io
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -45,7 +45,7 @@ jobs:
         sed -i "s/title: Hexo/title: Kratos-Rebirth/"                                "_config.yml"
         sed -i "s/subtitle: ''/subtitle: A demo site of theme Kratos Rebirth/"       "_config.yml"
         sed -i "s/description: ''/description: A demo site of theme Kratos Rebirth/" "_config.yml"
-        sed -i "s/author: John Doe/author: Candinya/"                                "_config.yml"
+        sed -i "s/author: John Doe/author: papwuj/"                                "_config.yml"
         sed -i "s/language:/language: zh-CN/"                                        "_config.yml"
         sed -i "s|url: http://yoursite.com|url: https://${SITE_URL}|"                "_config.yml"
         sed -i "s|permalink: :year/:month/:day/:title/|permalink: posts/:title/|"    "_config.yml"
@@ -88,7 +88,7 @@ jobs:
     - name: Setup git configs
       run: |
         git config --global user.name   "Github Actions"
-        git config --global user.email  "dev@candinya.com"
+        git config --global user.email  "dev@papwuj.github.io"
         # Set private key for deployment
         mkdir -p ~/.ssh/
         echo "${{ secrets.DEPLOY_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
@@ -104,7 +104,7 @@ jobs:
       run: |
         cd ./public
         git init -b gh-pages
-        git remote add origin git@github.com:Candinya/Kratos-Rebirth-Demo.git
+        git remote add origin git@github.com:papwuj/Kratos-Rebirth-Demo.git
         git add -A
         git commit -m "Update Demo Site at `date +'%Y-%m-%d %H:%M:%S'`"
         git push --set-upstream origin gh-pages -f

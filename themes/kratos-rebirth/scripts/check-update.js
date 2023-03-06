@@ -8,7 +8,7 @@ hexo.once('generateAfter', () => {
     if (!hexo.theme.config.check_update) {
         return;
     }
-    https.get('https://api.github.com/repos/Candinya/Kratos-Rebirth/releases/latest', {
+    https.get('https://api.github.com/repos/papwuj/Kratos-Rebirth/releases/latest', {
         headers: {
             'User-Agent': 'Hexo Theme Kratos-Rebirth Client'
         }

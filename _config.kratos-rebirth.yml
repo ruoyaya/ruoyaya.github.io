@@ -77,9 +77,9 @@ gitalk:
   clientID: '032201d847bdf8d2b9b9'
   clientSecret: 'a85ee400a3970c7be1aee8733f7b5f03bb6de971'
   # repo: 'Kratos-Rebirth-Demo'
-  # owner: 'Candinya'
+  # owner: 'papwuj'
   # admin: 
-  #   - 'Candinya'
+  #   - 'papwuj'
   # distractionFreeMode: false
 
 jsconfig:

@@ -1,7 +1,7 @@
 /*!
   标签小组件文件
-  Created by [Candinya](https://candinya.com)
-  Created for [Kratos-Rebirth](https://github.com/Candinya/Kratos-Rebirth)
+  Created by [papwuj](https://papwuj.github.io)
+  Created for [Kratos-Rebirth](https://github.com/papwuj/Kratos-Rebirth)
 */
 
 // 提示横幅
