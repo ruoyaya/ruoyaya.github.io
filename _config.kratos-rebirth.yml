@@ -85,5 +85,6 @@ gitalk:
 jsconfig:
   main:
     cover:
-      baseUrl: "https://papwuj.github.io/"
+      baseUrl: "https://papwuj.github.io"
+      filenameTemplate: "/images/thumb/thumb_{no}.webp" 
     createTime: "2018/05/06 17:03:12"
