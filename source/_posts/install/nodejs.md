@@ -32,4 +32,10 @@ yarn config set cache-folder "D:\soft\nodejs\yarn_cache"
 ### 更新NPM：
 ```
 npm i -g npm
+```  
+
+### 使用rimraf 删除 node_modudles：
+```
+npm i -g rimraf 
+rimraf node_modules
 ``` 
