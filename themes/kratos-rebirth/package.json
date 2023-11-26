@@ -9,20 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/papwuj/Kratos-Rebirth.git"
+    "url": "git+https://github.com/ruoyaya/Kratos-Rebirth.git"
   },
   "keywords": [
     "hexo",
     "theme",
     "kratos",
-    "papwuj"
+    "ruoyaya"
   ],
-  "author": "papwuj",
+  "author": "ruoyaya",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/papwuj/Kratos-Rebirth/issues"
+    "url": "https://github.com/ruoyaya/Kratos-Rebirth/issues"
   },
-  "homepage": "https://github.com/papwuj/Kratos-Rebirth#readme",
+  "homepage": "https://github.com/ruoyaya/Kratos-Rebirth#readme",
   "browserslist": [
     "last 2 versions",
     "> 1%",

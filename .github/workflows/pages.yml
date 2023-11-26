@@ -46,16 +46,16 @@ jobs:
     - name: Deploy hexo blog
       env: 
         # Github 仓库
-        GITHUB_REPO: github.com/papwuj/papwuj.github.io.git
+        GITHUB_REPO: github.com/ruoyaya/ruoyaya.github.io.git
         # Coding 仓库
-        # CODING_REPO: e.coding.net/papwuj/blogs.git
+        # CODING_REPO: e.coding.net/ruoyaya/blogs.git
         # Gitee 仓库
-        # GITEE_REPO: gitee.com/papwuj/papwuj.git
+        # GITEE_REPO: gitee.com/ruoyaya/ruoyaya.git
         #   rm -rf .git && git init && git add .
         #   git branch -m master
         #   git add .
         #   git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
-        #   git push --force --quiet "https://papwuj:7d0c55c3bbea4241d4a228ef32736443@gitee.com/papwuj/papwuj.git"
+        #   git push --force --quiet "https://ruoyaya:7d0c55c3bbea4241d4a228ef32736443@gitee.com/ruoyaya/ruoyaya.git"
 
       run: |
         git config --global user.name "WuJing"
@@ -66,5 +66,5 @@ jobs:
         git branch -m gh-pages
         git add .
         git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
-        git push --force --quiet "https://papwuj:${{ secrets.GITHUB_TOKEN }}@$GITHUB_REPO"
+        git push --force --quiet "https://ruoyaya:${{ secrets.GITHUB_TOKEN }}@$GITHUB_REPO"
         

@@ -62,8 +62,8 @@ menu:
   # friends: /friends/
   # sites:
   #   submenu: true
-  #   author: https://papwuj.github.io
-  #   project: https://github.com/papwuj/Kratos-Rebirth
+  #   author: https://ruoyaya.github.io
+  #   project: https://github.com/ruoyaya/Kratos-Rebirth
 
 label:
   # index: <i class="fa fa-home"></i>首页
@@ -141,16 +141,16 @@ gitalk:
   clientID: 'GitHub Application Client ID'
   clientSecret: 'GitHub Application Client Secret'
   repo: 'Kratos-Rebirth-Demo'
-  owner: 'papwuj'
+  owner: 'ruoyaya'
   admin: 
-    - 'papwuj'
+    - 'ruoyaya'
   distractionFreeMode: false
 
 # Gitment [Gitment](https://github.com/imsun/gitment/) 评论相关
 ## 不仅限于以下内容，您可以参照 [Gitment 文档](https://github.com/imsun/gitment#methods) 设置您需要的配置项
 ## id 会在页面自动生成，不必加入
 gitment:
-  owner: 'papwuj'
+  owner: 'ruoyaya'
   repo: 'Kratos-Rebirth-Demo'
   oauth:
     client_id: 'Your client ID'
@@ -233,15 +233,15 @@ friends:
   # - name: "猫猫①号"
   #   bio: "喵~"
   #   avatar: "../images/avatar.webp"
-  #   link: "https://papwuj.github.io"
+  #   link: "https://ruoyaya.github.io"
   # - name: "猫猫②号"
   #   bio: "喵喵~"
   #   avatar: "../images/avatar.webp"
-  #   link: "https://papwuj.github.io"
+  #   link: "https://ruoyaya.github.io"
   # - name: "猫猫⑨号"
   #   bio: "咪啪~"
   #   avatar: "../images/avatar.webp"
-  #   link: "https://papwuj.github.io"
+  #   link: "https://ruoyaya.github.io"
   verify: true # 验证每个友链的可访问性，炸了会有提示
 
 # Misc 杂项
