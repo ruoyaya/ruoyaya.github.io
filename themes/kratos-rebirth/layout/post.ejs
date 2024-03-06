@@ -14,16 +14,18 @@
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> <%- __('author') %> <span itemprop="name"><%- page.author || config.author %></span>
                 </li>
-                <li>
-                    <i class="fa fa-edit"></i> 
-                    <% const wordsCount = strip_html(page.content).length; %>
-                    <% if (wordsCount < 1500) { %>
-                        <%= wordsCount %>
-                    <% } else { %>
-                        <% if (theme.misc.showWordCountEstimateWavy) { %>~<% } %><%= (wordsCount / 1000).toFixed(2) %>K
-                    <% } %>
-                    <%- __('words') %>
-                </li>
+                <% if (theme.posts.wordCount?.enable) { %>
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        <% const wordsCount = strip_html(page.content).length; %>
+                        <% if (wordsCount < (theme.posts.wordCount?.threshold || 1500)) { %>
+                            <%= wordsCount %>
+                        <% } else { %>
+                            <% if (theme.misc.showWordCountEstimateWavy) { %>~<% } %><%= (wordsCount / 1000).toFixed(2) %>K
+                        <% } %>
+                        <%- __('words') %>
+                    </li>
+                <% } %>
                 <% if (commentProvider === 'valine' && theme.valine.visitor) { %>
                     <li id="<%- url_for(page.path) %>" class="leancloud_visitors" data-flag-title="<%- page.title %>">
                         <i class="fa fa-eye"></i>
@@ -52,10 +54,12 @@
         </header>
         <div class="kratos-post-content">
             <% if (page.expire === true || page.expire !== false && !!page.title) { %>
+            <!-- 
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
                 <div class="text"><p><%- __('last_modify_alert', '<time datetime="' + page.updated + '"></time>') %></p></div>
-            </div>
+            </div> 
+            -->
             <% } %>
             <% const tocContent = toc(page.encrypt ? page.origin : page.content, { list_number: !theme.mobile_toc?.hide_id }); %>
             <% if (!theme.mobile_toc?.hide && page.toc && strip_html(tocContent)) { %>

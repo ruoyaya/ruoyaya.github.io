@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-kratos-rebirth",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "description": "A transplanted theme for Hexo, with many new features built with love.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,20 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ruoyaya/Kratos-Rebirth.git"
+    "url": "git+https://github.com/Candinya/Kratos-Rebirth.git"
   },
   "keywords": [
     "hexo",
     "theme",
     "kratos",
-    "ruoyaya"
+    "candinya"
   ],
-  "author": "ruoyaya",
+  "author": "Candinya",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/ruoyaya/Kratos-Rebirth/issues"
+    "url": "https://github.com/Candinya/Kratos-Rebirth/issues"
   },
-  "homepage": "https://github.com/ruoyaya/Kratos-Rebirth#readme",
+  "homepage": "https://github.com/Candinya/Kratos-Rebirth#readme",
   "browserslist": [
     "last 2 versions",
     "> 1%",
