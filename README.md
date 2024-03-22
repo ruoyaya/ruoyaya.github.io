@@ -1,3 +1,3 @@
-# ruoyaya.github.io
+# papwuj.github.io
 
-https://blog.ruoyaya.com/
+https://papwuj.github.io/
