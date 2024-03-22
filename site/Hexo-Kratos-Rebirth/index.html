@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="https://papwuj.github.io/images/avatar.jpeg">
+  
+  <title>Hexo主题 Kratos-Rebirth | 冰块的个人首页</title>
+  
+  <meta name="author" content="WuJing" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="" />
+  
+  <meta name="description" content="🍭 关于主题一只移植的主题，兼具亮暗双主题，身负多种小挂件，短能卡片列首页，长能文章读更多，退可罗列全归档，进可搜索全文章，相关介绍可以参见主题说明页面哦~  样例站点自动部署已经上线，具体可以参照这篇日志：使用Github Actions部署主题样例站 全新的配置文档增加了！戳这里就能查看~ 或者也可以去我的博客踩踩哦~ 核心结构&amp;样式来源：@MoeDog 狗狗大佬的Kratos的某">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo主题 Kratos-Rebirth">
+<meta property="og:url" content="http://papwuj.github.io/site/Hexo-Kratos-Rebirth/index.html">
+<meta property="og:site_name" content="冰块的个人首页">
+<meta property="og:description" content="🍭 关于主题一只移植的主题，兼具亮暗双主题，身负多种小挂件，短能卡片列首页，长能文章读更多，退可罗列全归档，进可搜索全文章，相关介绍可以参见主题说明页面哦~  样例站点自动部署已经上线，具体可以参照这篇日志：使用Github Actions部署主题样例站 全新的配置文档增加了！戳这里就能查看~ 或者也可以去我的博客踩踩哦~ 核心结构&amp;样式来源：@MoeDog 狗狗大佬的Kratos的某">
+<meta property="og:locale">
+<meta property="og:image" content="https://papwuj.github.io/images/avatar.jpeg">
+<meta property="article:published_time" content="2023-03-01T17:01:01.000Z">
+<meta property="article:modified_time" content="2024-03-22T08:30:47.144Z">
+<meta property="article:author" content="WuJing">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://papwuj.github.io/images/avatar.jpeg">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+    
+  </style>
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                        <li>
+                                            
+                                                <a href="/">
+                                            
+                                                
+                                                    <i class="fa fa-home"></i>
+                                                
+                                                首页
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="/archives/">
+                                            
+                                                
+                                                    <i class="fa fa-file"></i>
+                                                
+                                                档案馆
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="/friends/">
+                                            
+                                                
+                                                    <i class="fa fa-paw"></i>
+                                                
+                                                好伙伴
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a>
+                                            
+                                                
+                                                    <i class="fa fa-link"></i>
+                                                
+                                                链接
+                                            </a>
+                                            
+                                                <ul class="sub-menu">
+                                                    
+                                                        <li>
+                                                            <a href="/pages/profile.html">
+                                                                
+                                                                作者博客
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a target="_blank" rel="noopener" href="https://github.com/papwuj/papwuj.github.io">
+                                                                
+                                                                项目链接
+                                                            </a>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">冰块的个人首页</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>冰块的个人首页</h2> <br />
+                        <span>你心里想成为什么样的人，就会成为什么样的人</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="http://papwuj.github.io/site/Hexo-Kratos-Rebirth/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">Hexo主题 Kratos-Rebirth</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2023-03-01T17:01:01.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2023-03-02</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">WuJing</span>
+                </li>
+                
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            ~1.68K
+                        
+                        字
+                    </li>
+                
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <!-- 
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1711096247144"></time> 前，其中的内容可能需要更新。</p></div>
+            </div> 
+            -->
+            
+            
+            
+            <hr />
+            <div itemprop="articleBody"><p><img src="https://repository-images.githubusercontent.com/132322562/46429300-7da7-11ea-8c82-d03503cb17b8" alt="Kratos-Rebirth"></p>
+<h2 id="🍭-关于主题"><a href="#🍭-关于主题" class="headerlink" title="🍭 关于主题"></a>🍭 关于主题</h2><p>一只移植的主题，兼具亮暗双主题，身负多种小挂件，短能卡片列首页，长能文章读更多，退可罗列全归档，进可搜索全文章，相关介绍可以参见<a target="_blank" rel="noopener" href="https://candinya.github.io/posts/Kratos-Rebirth/">主题说明</a>页面哦~</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/candinya/Kratos-Rebirth/releases/latest"><img src="https://img.shields.io/github/v/release/candinya/Kratos-Rebirth" alt="构建版本"></a><br><a target="_blank" rel="noopener" href="https://www.npmjs.com/package/hexo-theme-kratos-rebirth"><img src="https://img.shields.io/npm/v/hexo-theme-kratos-rebirth?color=red&logo=npm" alt="npm版本"></a><br><a target="_blank" rel="noopener" href="https://kr-demo.candinya.github.io/"><img src="https://github.com/candinya/Kratos-Rebirth/workflows/Build%20Demo%20Site/badge.svg" alt="样例站点部署状态"></a><br><a target="_blank" rel="noopener" href="https://app.fossa.com/projects/git%2Bgithub.com%2Fcandinya%2FKratos-Rebirth?ref=badge_shield"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcandinya%2FKratos-Rebirth.svg?type=shield" alt="FOSSA Status"></a></p>
+<p><a target="_blank" rel="noopener" href="https://kr-demo.candinya.github.io/">样例站点</a>自动部署已经上线，具体可以参照这篇日志：<a target="_blank" rel="noopener" href="https://candinya.github.io/posts/theme-demo-deployment-with-github-actions/">使用Github Actions部署主题样例站</a></p>
+<p>全新的配置文档增加了！戳<a target="_blank" rel="noopener" href="https://github.com/candinya/Kratos-Rebirth/blob/master/Kratos-Rebirth-Manual.md">这里</a>就能查看~</p>
+<p>或者也可以去<a target="_blank" rel="noopener" href="https://candinya.github.io/posts/Kratos-Rebirth/">我的博客</a>踩踩哦~</p>
+<p>核心结构&amp;样式来源：<a target="_blank" rel="noopener" href="https://github.com/xb2016">@MoeDog</a> 狗狗大佬的<a target="_blank" rel="noopener" href="https://github.com/xb2016/kratos">Kratos</a>的某个上古版本</p>
+<h2 id="💞-安装使用"><a href="#💞-安装使用" class="headerlink" title="💞 安装使用"></a>💞 安装使用</h2><ol>
+<li><code>hexo init your-awesome-blog</code> 初始化您的 Hexo 站点目录（已经完成则可以忽略）</li>
+<li>进入您的站点目录，使用 <code>npm install --save hexo-theme-kratos-rebirth</code> 或 <code>yarn add hexo-theme-kratos-rebirth</code> 安装主题。如果您有调整代码的需求，您也可以进入站点的主题目录，使用 git clone 本仓库来使用。</li>
+<li>修改站点目录下的 <code>_config.yml</code> 站点配置文件，将默认的 <code>theme: landscape</code> 修改成 <code>theme: kratos-rebirth</code></li>
+<li>如有自定义配置的需要，为更有效地管理您的主题配置文件，您可以从该主题代码仓库中，手动复制一份 <code>_config.yml</code> ，并改名为 <code>_config.kratos-rebirth.yml</code> ，移动至您的站点目录下；或者您也可以参考 <code>.demo</code> 目录下的 <code>_config.kratos-rebirth.yml</code> 这个用于构建样例站点的配置文件扩展，将其移动至站点目录下。</li>
+</ol>
+<p>**每一项配置项的具体解释可以参照<a target="_blank" rel="noopener" href="https://kr-demo.candinya.github.io/posts/Kratos-Rebirth-Manual/">配置文档</a>**。</p>
+<h2 id="🎁-使用环境小贴士"><a href="#🎁-使用环境小贴士" class="headerlink" title="🎁 使用环境小贴士"></a>🎁 使用环境小贴士</h2><ol>
+<li>hexo的官方渲染器现在也已经支持文章置顶啦，配置<code>Front-Matter</code>段中的<code>sticky</code>参数即可实现置顶降序排序，可以参见生成器的<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-index#usage">官方文档</a>哦</li>
+<li>由于使用了 <code>?.</code> 运算符，在旧版本的 NodeJS 上可能出现工作不正常的情况，因而我们推荐您使用 Node v14 或更新的版本。详情请参见 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/Optional_chaining">可选链操作符</a> 。</li>
+<li>（如果您使用的是主题目录内的配置的方案，现在已经不推荐这种方案了）为了防止主题配置文件被上传导致版本管理冲突，主题的 <code>_config.yml</code> 文件是默认被忽略的（ .gitignore ），如果您使用远程构建部署的方式（例如 Pages 或是 Vercel 等），您需要手动添加对主题配置文件的追踪，可以使用 <code>git add -f ./themes/kratos-rebirth/_config.yml</code> 来恢复追踪。</li>
+<li>如果发现代码块渲染样式出错（例如块代码被渲染成了行代码样式），可以试着检查一下是不是同时开启了 highlight 和 prismjs 的选项哦，主题对 highlight 的支持更佳呢</li>
+</ol>
+<h2 id="💬-支持的评论系统"><a href="#💬-支持的评论系统" class="headerlink" title="💬 支持的评论系统"></a>💬 支持的评论系统</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://disqus.com/">Disqus</a></li>
+<li><a target="_blank" rel="noopener" href="https://disqusjs.skk.moe/">DisqusJS</a></li>
+<li><a target="_blank" rel="noopener" href="https://valine.js.org/">Valine</a></li>
+<li><a target="_blank" rel="noopener" href="https://twikoo.js.org/">Twikoo</a></li>
+<li><a target="_blank" rel="noopener" href="https://waline.js.org/">Waline</a></li>
+<li><a target="_blank" rel="noopener" href="https://gitalk.github.io/">Gitalk</a></li>
+<li><a target="_blank" rel="noopener" href="https://livere.com/">LiveRe</a></li>
+</ul>
+<h2 id="🍩-二次开发相关"><a href="#🍩-二次开发相关" class="headerlink" title="🍩 二次开发相关"></a>🍩 二次开发相关</h2><p>为了保证最终上线产品的有效空间利用，我们引入了gulp对静态资源文件（js、css）进行压缩；因而您在src文件夹下直接修改的静态文件会无法实时生效，请安装gulp及相应的插件（在主题文件夹下 <code>npm install</code> 或是 <code>yarn</code> ）。</p>
+<p>您可以使用 <code>npm run build</code> 或是 <code>yarn build</code> 来构建一次静态文件。</p>
+<p>同时，为方便变化内容实时更新和多浏览器测试开发，您可以使用 <code>npm run dev</code> 或是 <code>yarn dev</code> 来运行。我们也有引入 Browser Sync 功能方便地在多个浏览器上查看变化，<strong>推荐</strong>您在 Hexo 启动后运行该指令。</p>
+<h2 id="💮-非常感谢"><a href="#💮-非常感谢" class="headerlink" title="💮 非常感谢"></a>💮 非常感谢</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/xb2016/kratos-pjax">Kratos-pjax</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/DIYgod/diygod.me/tree/master/themes/sagiri">hexo-theme-sagiri</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/SukkaW/hexo-theme-suka">hexo-theme-suka</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-theme-landscape">hexo-theme-landscape</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/MoePlayer/APlayer">APlayer</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/rstacruz/nprogress">NProgress</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cloudflare.com/">CloudFlare</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jsdelivr.com/">jsDelivr</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.unpkg.com/">unpkg</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.npmjs.com/">npm</a></li>
+</ul>
+<h2 id="🎵-证书"><a href="#🎵-证书" class="headerlink" title="🎵 证书"></a>🎵 证书</h2><ul>
+<li>GNU General Public License v3</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://app.fossa.com/projects/git%2Bgithub.com%2Fcandinya%2FKratos-Rebirth?ref=badge_large"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcandinya%2FKratos-Rebirth.svg?type=large" alt="FOSSA Status"></a></p>
+</div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <h5 itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "http://papwuj.github.io/site/Hexo-Kratos-Rebirth/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "http://papwuj.github.io/site/Hexo-Kratos-Rebirth/";
+            const title         = "「Hexo主题 Kratos-Rebirth」";
+            const excerpt       = `
+🍭 关于主题一只移植的主题，兼具亮暗双主题，身负多种小挂件，短能卡片列首页，长能文章读更多，退可罗列全归档，进可搜索全文章，相关介绍可以参见主题说明页面哦~
+
+样例站点自动部署已经上线，具体可以参照这篇日志：使用Github Ac...`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    
+                </div>
+                <div class="pull-date">
+                    <time datetime="2024-03-22T08:30:47.144Z" itemprop="dateModified">最后编辑：2024-03-22</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" Hexo 建站工具" href="/site/Hexo-hello-world/">&lt; 上一篇</a>
+            </div>
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" VSCode官网下载Exe安装包经常网络下载速度缓慢。" href="/install/vscode-download/">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+        <link rel="stylesheet" href="/vendors/gitalk@1.7.2/dist/gitalk.css"></script>
+<div id="gitalk-container" class="post-comments lazy-load" style="padding-left:2rem; padding-right:2rem;"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            console.log('Gitalk loading...');
+            const gitalk = new Gitalk(Object.assign({
+                id: '/site/Hexo-Kratos-Rebirth/',
+                path: '/site/Hexo-Kratos-Rebirth/'
+            }, JSON.parse('{"clientID":"a3aab9d618f147d39612","clientSecret":"a8cc0bcbb97666183b1467f0728c62e90aa6dc5e","repo":"papwuj.github.io","owner":"papwuj","admin":["papwuj"],"distractionFreeMode":false}')));
+
+            gitalk.render('gitalk-container');
+        }
+        if (typeof Gitalk === 'undefined') {
+            const src = '/vendors/gitalk@1.7.2/dist/gitalk.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk">comments powered by Gitalk.</a></noscript>
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="https://papwuj.github.io/images/avatar.jpeg" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center"></p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                18
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                8
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                0
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BB%A3%E7%A0%81%E6%94%B6%E8%97%8F/">代码收藏</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BB%A3%E7%A0%81%E6%94%B6%E8%97%8F/Java/">Java</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BB%A3%E7%A0%81%E6%94%B6%E8%97%8F/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BB%BA%E7%AB%99/">建站</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%BB%BA%E7%AB%99/Hexo/">Hexo</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A3%85%E6%9C%BA/">装机</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A3%85%E6%9C%BA/%E5%AF%86%E9%92%A5/">密钥</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%A3%85%E6%9C%BA/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/">开发工具</a><span class="category-list-count">8</span></li></ul></li></ul>
+  </aside>
+
+
+            
+                
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/install/powershell/"><i class="fa  fa-book"></i> 解决使用 PowerShell 不能运行 cnpm 等命令的问题</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/java/md5/"><i class="fa  fa-book"></i> MD5压缩解压</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/java/redis/"><i class="fa  fa-book"></i> Redis</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/java/spel/"><i class="fa  fa-book"></i> SPEL表达式解析</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/sql/mysql_normal_sql/"><i class="fa  fa-book"></i> Mysql常用SQL</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- New links -->
+                        
+                            <li>
+                                <a target="_blank" rel="nofollow" href="https://github.com/papwuj">
+                                    
+                                        <i class="fa fa-github"></i>
+                                    
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a target="_blank" rel="nofollow" href="https://nya.one/@papwuj">
+                                    
+                                        <svg fill="currentColor" viewBox="0 0 1024 1024"><path d="M512,0C794.58,0 1024,229.42 1024,512C1024,794.58 794.58,1024 512,1024C229.42,1024 0,794.58 0,512C0,229.42 229.42,0 512,0ZM292.789,304.042L292.789,723.567C292.789,750.225 314.432,771.868 341.091,771.868C367.749,771.868 389.393,750.225 389.393,723.567L389.393,440.596L641.699,748.461C650.156,762.483 665.536,771.868 683.091,771.868C709.749,771.868 731.393,750.225 731.393,723.567L731.393,304.042C731.393,277.384 709.749,255.74 683.091,255.74C664.98,255.74 649.184,265.729 640.916,280.494L565.431,372.601L565.452,372.618C558.836,380.884 554.877,391.367 554.877,402.768C554.877,429.426 576.521,451.07 603.179,451.07C615.262,451.07 626.315,446.624 634.789,439.28L634.789,587.625L383.634,281.165C375.473,266.033 359.474,255.74 341.091,255.74C314.432,255.74 292.789,277.384 292.789,304.042Z" /></svg>
+                                    
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a target="_blank" rel="nofollow" href="/atom.xml">
+                                    
+                                        <i class="fa fa-rss"></i>
+                                    
+                                </a>
+                            </li>
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2024 冰块的个人首页 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by WuJing.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                
+                    <div class="box group-box">
+                        <a href="https://matrix.to/#/#CandyUnion:nya.one" target="_blank" rel="nofollow">
+                            <span class="fa fa-users"></span>
+                        </a>
+                    </div>
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="netease"
+        type="playlist"
+        id="3204190542"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    </body>
+</html>
