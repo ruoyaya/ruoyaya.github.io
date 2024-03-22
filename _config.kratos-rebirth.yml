@@ -74,8 +74,8 @@ posts:
     provider: gitalk
 
 gitalk:
-  clientID: '032201d847bdf8d2b9b9'
-  clientSecret: '2543fa2d5936804df167d6e9866e9a47c8b360fe'
+  clientID: 'a3aab9d618f147d39612'
+  clientSecret: 'a8cc0bcbb97666183b1467f0728c62e90aa6dc5e'
   repo: 'papwuj.github.io'
   owner: 'papwuj'
   admin: 
